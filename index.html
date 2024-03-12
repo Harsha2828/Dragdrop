@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div style="display: flex;">
+            <div class="container" id="container1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    Programming Languages</div>
+            <div class="container" id="container2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    Version Control Systems</div>
+            <div class="container" id="container3" ondrop="drop(event)" ondragover="allowDrop(event)">
+        Scripting Languages</div>
+        </div>
+            <div class="outer" style="display: flex;">
+                <div id="item1" class="item" draggable="true"ondragstart="drag(event)">Python</div>
+                <div id="item2" class="item" draggable="true"ondragstart="drag(event)">CSS</div>
+                <div id="item3" class="item" draggable="true"ondragstart="drag(event)">Git</div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
